@@ -143,3 +143,12 @@ a.custom-card:hover {
 .site-header #user{
   color: white;
 }
+
+.row .col-2 .img.img-thumbnail{
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.row .col-2 .img.img-thumbnail:hover{
+  background-color: #007bff ;
+}
