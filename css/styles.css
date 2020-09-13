@@ -136,7 +136,9 @@ a.custom-card:hover {
   text-decoration: inherit;
 }
 
-.checked {
+.checked, 
+.fa-star-half-alt,
+.fa-star-half {
   color: orange;
 }
 
@@ -151,4 +153,40 @@ a.custom-card:hover {
 
 .row .col-2 .img.img-thumbnail:hover{
   background-color: #007bff ;
+}
+
+.star-rating {
+  direction: rtl;
+  display: inline-block;
+  padding: 20px;
+}
+
+.star-rating input[type=radio] {
+  display: none;
+}
+
+.star-rating label {
+  color: rgb(133, 142, 192);
+  font-size: 40px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label,
+.star-rating input[type=radio]:checked~label {
+  color: #ffbf00;
+}
+
+.productScore {
+  font-size: 3.5rem;
+  vertical-align: bottom;
+}
+
+.productScoreStars{
+  font-size: 2rem;
+}
+
+.starAndPromedio, .scoreStarAndPromedio{
+  display: inline-block;
 }
