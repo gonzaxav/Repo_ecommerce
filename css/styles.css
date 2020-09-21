@@ -138,21 +138,13 @@ a.custom-card:hover {
 
 .checked, 
 .fa-star-half-alt,
-.fa-star-half {
+.fa-star-half, 
+.far.fa-star {
   color: orange;
 }
 
 .site-header #user{
   color: white;
-}
-
-.row .col-2 .img.img-thumbnail{
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-
-.row .col-2 .img.img-thumbnail:hover{
-  background-color: #007bff ;
 }
 
 .star-rating {
@@ -165,8 +157,8 @@ a.custom-card:hover {
   display: none;
 }
 
-.star-rating label {
-  color: rgb(133, 142, 192);
+.star-rating label{
+  color: rgb(189, 192, 206);
   font-size: 40px;
   padding: 0;
   cursor: pointer;
@@ -189,4 +181,8 @@ a.custom-card:hover {
 
 .starAndPromedio, .scoreStarAndPromedio{
   display: inline-block;
+}
+
+.shadow-sm:hover {
+  box-shadow: 0 .125rem .25rem .25rem rgba(0,0,0,.15) !important;
 }

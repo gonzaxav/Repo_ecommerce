@@ -1,6 +1,7 @@
 var product = "";
 var commentsArray = [];
 var selectedImg;
+var productsArray = "";
 
 function showProduct(array, arrayComments) {
 
@@ -16,18 +17,33 @@ function showProduct(array, arrayComments) {
             Vendidos: <strong>${product.soldCount}</strong><br>
             Categoria: <strong>${product.category}</strong><br>`;
 
-    imgs += `<div class="row">
-                <div class="col-2 text-center" style="width:100px;">
-                    <img class="img img-thumbnail" id="img01" src="${product.images[0]}" width="100px" alt=""><br>
-                    <img class="img img-thumbnail" id="img02" src="${product.images[1]}" width="100px" alt=""><br>
-                    <img class="img img-thumbnail" id="img03" src="${product.images[2]}" width="100px" alt=""><br>
-                    <img class="img img-thumbnail" id="img04" src="${product.images[3]}" width="100px" alt=""><br>
-                    <img class="img img-thumbnail" id="img05" src="${product.images[4]}" width="100px" alt=""><br>
-                </div>
-                <div class="col-10 text-center" style="width:500px;">
-                    <img class="img img-thumbnail" id="img06" src="${product.images[0]}" width="500px" alt=""><br>
-                </div>
-            </div>`;
+    imgs += `<div id="carouselFade" class="carousel slide carousel-fade w-75 ml-auto mr-auto img-thumbnail" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="5000">
+                <img id="img01" src="${product.images[0]}" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img id="img02" src="${product.images[1]}" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img id="img03" src="${product.images[2]}" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img id="img04" src="${product.images[3]}" class="d-block w-100"  alt="...">
+              </div>
+              <div class="carousel-item" data-interval="5000">
+                <img id="img05" src="${product.images[4]}" class="d-block w-100"  alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>`;
 
     let productScore = 0;
 
@@ -48,7 +64,7 @@ function showProduct(array, arrayComments) {
             puntos += '<span class="fa fa-star-half-alt"></span>';
         }
         else {
-            puntos += '<span class="fa fa-star"></span>';
+            puntos += '<span class="far fa-star"></span>';
         }
     }
 
@@ -78,7 +94,7 @@ function showProduct(array, arrayComments) {
                 puntos += '<span class="fa fa-star checked"></span>';
             }
             else {
-                puntos += '<span class="fa fa-star"></span>';
+                puntos += '<span style="color:rgb(189, 192, 206);" class="fa fa-star"></span>';
             }
         }
         comments += `<div style="text-align: left;">${puntos}</div>
@@ -90,22 +106,35 @@ function showProduct(array, arrayComments) {
     document.getElementById("contenido").innerHTML = info;
     document.getElementById("imagenes").innerHTML = imgs;
     document.getElementById("comentarios").innerHTML = comments;
+}
 
-    document.getElementById("img01").addEventListener("mouseenter", function (e) {
-        document.getElementById("img06").src = this.src;
-    });
-    document.getElementById("img02").addEventListener("mouseenter", function (e) {
-        document.getElementById("img06").src = this.src;
-    });
-    document.getElementById("img03").addEventListener("mouseenter", function (e) {
-        document.getElementById("img06").src = this.src;
-    });
-    document.getElementById("img04").addEventListener("mouseenter", function (e) {
-        document.getElementById("img06").src = this.src;
-    });
-    document.getElementById("img05").addEventListener("mouseenter", function (e) {
-        document.getElementById("img06").src = this.src;
-    });
+function showRelatedProducts(prodArray, product) {
+    let info = "";
+
+    info += `
+            <h3 class="h3 mb-4">También te pueden interesar estos otros productos</h3>
+            <div class="row">
+            `
+
+    for (let relatedprod in product.relatedProducts) {
+        info += `
+                <div class="col-md-4">
+                    <a href="product-info.html" class="card mb-4 shadow-sm custom-card">
+                        <img class="bd-placeholder-img card-img-top" src="${prodArray[product.relatedProducts[relatedprod]].imgSrc}">
+                        <h2 class="m-3">${prodArray[product.relatedProducts[relatedprod]].name}</h3>
+                        <div class="card-body h5">
+                            <span>${prodArray[product.relatedProducts[relatedprod]].currency}</span>
+                            <span>${prodArray[product.relatedProducts[relatedprod]].cost}</span>
+                        </div>
+                    </a>
+                </div>
+                `;
+    }
+    info += `
+            </div>
+            `
+
+    document.getElementById("productosRelacionados").innerHTML = info;
 }
 
 document.addEventListener("DOMContentLoaded", function (e) {
@@ -124,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     document.getElementById("enviarNuevoComentario").addEventListener("click", function (e) {
         let now = new Date();
 
-        let dateTime = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}
+        let dateTime = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}
                         ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
 
         let newComment = {
@@ -137,6 +166,13 @@ document.addEventListener("DOMContentLoaded", function (e) {
         commentsArray.push(newComment);
 
         showProduct(product, commentsArray);
+    })
+    getJSONData(PRODUCTS_URL).then(function (resultObj) {
+        if (resultObj.status === "ok") {
+            productsArray = resultObj.data;
+
+            showRelatedProducts(productsArray, product);
+        }
     })
 });
 

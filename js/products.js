@@ -62,7 +62,6 @@ function showProducts(array) {
                                     Precio:  <strong>${product.cost} ${product.currency}</strong><br>
                                     ${product.soldCount} vendidos<br>
                                 </p>
-                                <button href="product-info.html" class="btn btn-primary btn-lg" style="float: right;">Ver producto</button>
                             </div>
                         </div>
                     </a>`;

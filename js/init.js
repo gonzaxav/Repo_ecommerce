@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", function(e){
 
   if (userLogged){
     userLogged = JSON.parse(userLogged);
-    user.innerText = user.innerText + 'Usuario logueado: ' + userLogged.email;
+    user.innerText = '' + userLogged.email;
   }
+  document.getElementById("logout").addEventListener("click", function(e){
+    localStorage.removeItem('User-Logged');
+  })
 })
