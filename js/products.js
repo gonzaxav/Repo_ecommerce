@@ -46,25 +46,22 @@ function showProducts(array) {
 
             if (buscar == undefined || product.name.toLowerCase().indexOf(buscar) != -1) {
                 contenido += `
-                    <a href="product-info.html" class="list-group-item list-group-item-action">
-                        <div class="row">
-                            <div class="col-3">
-                                <img src="${product.imgSrc}" class="img-thumbnail" alt="Imagen">
-                            </div>
-                            <div class="col">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h4 class="mb-1">
-                                        ${product.name}<br>
-                                    </h4>
-                                </div>
-                                <p class="mb-1">
-                                    ${product.description}<br><br>
-                                    Precio:  <strong>${product.cost} ${product.currency}</strong><br>
-                                    ${product.soldCount} vendidos<br>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-0">
+                        <a href="product-info.html" class="p-0 mx-auto h-100 card list-group-item-action mwp-300">
+                            <img src="${product.imgSrc}" class="card-img-top" alt="Imagen">
+                            <div class="card-body p-3">
+                                <h4 class="card-title">${product.name}</h4>
+                                <p class="card-text">
+                                    ${product.description}
                                 </p>
                             </div>
-                        </div>
-                    </a>`;
+                            <div class="card-footer">
+                                Precio:  <strong>${product.cost} ${product.currency}</strong>
+                                ${product.soldCount} vendidos
+                            </div>
+                        </a>
+                    </div>
+                    `;
             }
         }
 

@@ -1,15 +1,24 @@
+function updateAvatarSrc(inputURLA){
+    if (inputURLA.value !== ""){
+        document.getElementById("inputImage").src = inputURLA.value;
+    } else {
+        document.getElementById("inputImage").src = "https://www.w3schools.com/howto/img_avatar.png";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function (e) {
     let myProfile = JSON.parse(localStorage.getItem('UserProfile'));
 
-    if (myProfile !== null){
-        let inputURLAvatar = document.getElementById("inputURLAvatar");
-        let inputName = document.getElementById("inputName");
-        let inputSurname = document.getElementById("inputSurname");
-        let inputAge = document.getElementById("inputAge");
-        let inputEmail = document.getElementById("inputEmail");
-        let inputPhone = document.getElementById("inputPhone");
+    let inputURLAvatar = document.getElementById("inputURLAvatar");
+    let inputName = document.getElementById("inputName");
+    let inputSurname = document.getElementById("inputSurname");
+    let inputAge = document.getElementById("inputAge");
+    let inputEmail = document.getElementById("inputEmail");
+    let inputPhone = document.getElementById("inputPhone");
 
+    if (myProfile !== null){
         inputURLAvatar.value = myProfile.avatar;
+        updateAvatarSrc(inputURLAvatar);
         inputName.value = myProfile.name;
         inputSurname.value = myProfile.surname;
         inputAge.value = myProfile.age;
@@ -17,14 +26,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
         inputPhone.value = myProfile.phone;
     }
 
-    document.getElementById("submitBtn").addEventListener("click", function(e){
-        let inputURLAvatar = document.getElementById("inputURLAvatar");
-        let inputName = document.getElementById("inputName");
-        let inputSurname = document.getElementById("inputSurname");
-        let inputAge = document.getElementById("inputAge");
-        let inputEmail = document.getElementById("inputEmail");
-        let inputPhone = document.getElementById("inputPhone");
+    inputURLAvatar.addEventListener("input", function(e){
+        updateAvatarSrc(inputURLAvatar);
+    })
 
+    document.getElementById("submitBtn").addEventListener("click", function(e){
+        let form = document.getElementById("needs-validation");
         let camposCompletos = true;
 
         if (inputName.value === ''){
@@ -51,8 +58,10 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 email: inputEmail.value,
                 phone: inputPhone.value
             }));
-        }else{
-            alert("Debes ingresar los datos!");
+        } else {
+            e.preventDefault();
+            e.stopPropagation();
+            form.classList.add("was-validated");
         }
     });
 });

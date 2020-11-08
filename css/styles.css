@@ -201,3 +201,28 @@ a.custom-card:hover {
   left: 0px;
   transform: translate(0%, 0);
 }
+
+@media (max-width: 575.98px) {
+  .mwp-300{
+    max-width: 300px;
+  }
+}
+.mwp-500{
+  max-width: 500px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button.removeArrow ,
+input::-webkit-inner-spin-button.removeArrow {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number].removeArrow {
+  -moz-appearance: textfield;
+}
+
+.fixAvatar{
+  width: 150px;
+}
