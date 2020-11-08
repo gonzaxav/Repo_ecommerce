@@ -31,21 +31,17 @@ document.addEventListener("DOMContentLoaded", function (e) {
     })
 
     document.getElementById("submitBtn").addEventListener("click", function(e){
-        let form = document.getElementById("needs-validation");
         let camposCompletos = true;
 
         if (inputName.value === ''){
-            inputName.classList.add("invalid");
             camposCompletos = false;
         }
 
         if (inputSurname.value === ''){
-            inputSurname.classList.add("invalid");
             camposCompletos = false;
         }
 
         if (inputEmail.value === ''){
-            inputEmail.classList.add("invalid");
             camposCompletos = false;
         }
 
@@ -58,10 +54,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 email: inputEmail.value,
                 phone: inputPhone.value
             }));
-        } else {
-            e.preventDefault();
-            e.stopPropagation();
-            form.classList.add("was-validated");
         }
     });
 });
