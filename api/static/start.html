@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html class="bg-dark" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>Xiran's Commission Information</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="navID">
+
+  </div>
+
+  <main role="main">
+    <div class="album py-5 bg-dark">
+      <div class="container-fluid">
+
+        <!------------------------------------------------------------------->
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Contact Information</h4>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Discord</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name #1234" aria-label="Discord"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">PayPal E-mail</span>
+              </div>
+              <input type="email" class="form-control" placeholder="email@mail.com" aria-label="PayPal"
+                aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center d-none" id="designingCharIDValue">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Are we designing a character from scratch?</h4>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="designCharacterRadio" id="noDesignRadio" value="no" onchange="updateDesignCharacters()">
+              <label class="form-check-label text-light" for="noDesignRadio">
+                <span id="noDesignRadioText">No, we are not designing a character</span>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="designCharacterRadio" id="yesDesignRadio" value="yes" onchange="updateDesignCharacters()">
+              <label class="form-check-label text-light" for="yesDesignRadio">
+                <span id="yesDesignRadioText">Yes, we are designing a new character</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">References</h4>
+            <span class="text-light">I prefer an imgur album, but if that's not possible, please provide 1 link per
+              line</span>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Imgur Album</span>
+              </div>
+              <textarea class="form-control" placeholder="https://imgur.com/a/"
+                aria-label="referenceDescription"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center d-none" id="styleShadingIDValue">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Style</h4>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputStyle">Style</label>
+              </div>
+              <select class="custom-select" id="inputStyle" onchange="updateStyle()">
+                <option value="choose" selected>Choose...</option>
+                <option value="cleanColors">Clean Colors</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="coloredSketch">Colored Sketch</option>
+                <option value="emote">Emote</option>
+                <option value="sketch">Sketch</option>
+                <option value="doodle">Doodle</option>
+                <option value="scribble">Scribble</option>
+                <option value="logo">Logo (.PSD)</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3" id="styleShadingID">
+              <h4 class="text-light">If Doodle/Scribble: Shading?</h4>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="styleShadingRadio" id="noStyleRadio" value="no" onchange="showStyleShading()">
+                <label class="form-check-label text-light" for="noStyleRadio">
+                  <span id="noStyleShadingRadioText">No aditional shading</span>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="styleShadingRadio" id="yesStyleRadio" value="yes" onchange="showStyleShading()">
+                <label class="form-check-label text-light" for="yesStyleRadio">
+                  <span id="yesStyleShadingRadioText">Yes I would like aditinal shading</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center d-none" id="bodyIDValue">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Body</h4>
+
+            <div class="btn-group btn-group-toggle mb-2 mx-auto p-0 col-12" data-toggle="buttons">
+
+              <label class="btn btn-secondary col" type="button" name="buttonBody" for="radioBody1" data-toggle="button"
+                aria-pressed="false" autocomplete="off" onchange="updateBody()">
+                <input class="form-check-input" type="radio" name="amountBody" id="radioBody1" value="portrait">
+                <span id="portraitText">Portrait</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonBody" for="radioBody2" data-toggle="button"
+                aria-pressed="false" autocomplete="off" onchange="updateBody()">
+                <input class="form-check-input" type="radio" name="amountBody" id="radioBody2" value="halfbody">
+                <span id="halfbodyText">Halfbody</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonBody" for="radioBody3" data-toggle="button"
+                aria-pressed="false" autocomplete="off" onchange="updateBody()">
+                <input class="form-check-input" type="radio" name="amountBody" id="radioBody3" value="thighs">
+                <span id="thigh-upText">Thigh-up</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonBody" for="radioBody4" data-toggle="button"
+                aria-pressed="false" autocomplete="off" onchange="updateBody()">
+                <input class="form-check-input" type="radio" name="amountBody" id="radioBody4" value="fullbody">
+                <span id="fullbodyText">Full body</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonBody" for="radioBody5" data-toggle="button"
+                aria-pressed="false" autocomplete="off" onchange="updateBody()">
+                <input class="form-check-input" type="radio" name="amountBody" id="radioBody5" value="other">
+                <span id="otherText">Other</span>
+              </label>
+
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Expression & Pose</h4>
+            <span class="text-light">I prefer visual references, but if that's not possible, we can try working from
+              description.</span>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Reference /<br>Description</span>
+              </div>
+              <textarea class="form-control" placeholder="Type here..." aria-label="expressionPose"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center d-none" id="outfitIDValue">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Outfit Complexity</h4>
+            <span class="text-light">This is subject to change based on my judgement, but it should give you a rough
+              idea of what I look at in an outfit.</span>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputOutfit">Complexity</label>
+              </div>
+              <select class="custom-select" id="inputOutfit" onchange="updateOutfit()">
+                <option value="choose" selected>Choose...</option>
+                <option value="verysimple" name="outfitOptions">Very simple (T-shirt + pants)</option>
+                <option value="simple" name="outfitOptions">Simple</option>
+                <option value="average" name="outfitOptions">Average</option>
+                <option value="somewhatcomplex" name="outfitOptions">Somewhat complex</option>
+                <option value="layeredclothing" name="outfitOptions">Layered clothing</option>
+                <option value="verycomplex" name="outfitOptions">Very complex (Semi-transparent, lace, embroidered, etc.)</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Description /<br>Comments</span>
+              </div>
+              <textarea class="form-control" placeholder="Type here..." aria-label="outfitDescription"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center">50$</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Solo, Duo, or Multiple Characters</h4>
+
+            <div class="btn-group btn-group-toggle mb-2 mx-auto p-0 col-12" data-toggle="buttons">
+
+              <label class="btn btn-secondary col" type="button" name="buttonAmountCharacters" for="radioAmount1" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="amountCharacters" id="radioAmount1" value="1">
+                <span>1</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonAmountCharacters" for="radioAmount2" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="amountCharacters" id="radioAmount2" value="2">
+                <span>2</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonAmountCharacters" for="radioAmount3" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="amountCharacters" id="radioAmount3" value="3">
+                <span>3</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonAmountCharacters" for="radioAmount4" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="amountCharacters" id="radioAmount4" value="4">
+                <span>4</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" name="buttonAmountCharacters" for="radioAmount5" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="amountCharacters" id="radioAmount5" value="5">
+                <span>Other</span>
+              </label>
+
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center">50$</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Background</h4>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="backgroundRadio" id="noBackgroundRadio" checked>
+              <label class="form-check-label text-light" for="noBackgroundRadio">
+                No, I don't want a background; final image will have a gray or transparent background (specify in
+                comment box).
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="backgroundRadio" id="yesBackgroundRadio">
+              <label class="form-check-label text-light" for="yesBackgroundRadio">
+                Yes, I would like a background.
+              </label>
+            </div>
+
+            <span class="text-light">This is subject to change based on my judgement.</span>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputBackground">Complexity</label>
+              </div>
+              <select class="custom-select" id="inputBackground">
+                <option selected>Choose...</option>
+                <option value="1">Simple (Repeating pattern)</option>
+                <option value="2">Average</option>
+                <option value="3">Somewhat complex</option>
+                <option value="4">Very complex (Fully rendered scene integrating the character(s))</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Background<br>description/references</span>
+              </div>
+              <textarea class="form-control" placeholder="Type here..." aria-label="backgroundDescription"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center">100%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Private?</h4>
+            <span class="text-light">Select "Yes" if you want it kept off my social media permanently.</span>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="privateRadio" id="noPrivateRadio" checked>
+              <label class="form-check-label text-light" for="noPrivateRadio">
+                No, Xiran can post it wherever she wants
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="privateRadio" id="yesPrivateRadio">
+              <label class="form-check-label text-light" for="yesPrivateRadio">
+                Yes, I want Xiran to keep it off social media (this will double the price)
+              </label>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Skip Queue/Rush/Deadline</h4>
+
+            <div class="btn-group btn-group-toggle mb-2 mx-auto p-0 col-12" data-toggle="buttons">
+
+              <label class="btn btn-secondary col" type="button" for="radioSkip1" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="skipQueue" id="radioSkip1" value="1">
+                <span class="font-weight-bold">Add me to queue<br></span>
+                <span>Do not skip the line, I'm willing to wait.</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" for="radioSkip2" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="skipQueue" id="radioSkip2" value="2">
+                <span class="font-weight-bold">Skip queue<br></span>
+                <span>Skip the line; order will NOT be done ASAP</span>
+              </label>
+
+              <label class="btn btn-secondary col" type="button" for="radioSkip3" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                <input class="form-check-input" type="radio" name="skipQueue" id="radioSkip3" value="3">
+                <span class="font-weight-bold">Rush/Priority<br></span>
+                <span>Skip the line; order done ASAP</span>
+              </label>
+
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <div class="row h-50"></div>
+            <p class="text-light text-center">50%</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Lewd?</h4>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="lewdRadio" id="noLewdRadio">
+              <label class="form-check-label text-light" for="noLewdRadio">
+                No, I'm innocent!
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="lewdRadio" id="yesLewdRadio">
+              <label class="form-check-label text-light" for="yesLewdRadio">
+                Yes, it's a lewd~
+              </label>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Did you read my <a
+                href="https://www.deviantart.com/xir4n/art/Commissions-Prices-ToS-FAQ-Info-OPEN-844947526">TOS?</a></h4>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tosRadio" id="yesTosRadio">
+              <label class="form-check-label text-light" for="yesTosRadio">
+                Yes, I read the Terms of Service & I agree to them
+              </label>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Do you have any questions or concerns?</a></h4>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Questions /<br>Concerns</span>
+              </div>
+              <textarea class="form-control" placeholder="Type here..." aria-label="questionsConcerns"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <h4 class="text-light">Any other details I should know about?</a></h4>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Details</span>
+              </div>
+              <textarea class="form-control" placeholder="Type here..." aria-label="details"></textarea>
+            </div>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+        <div class="row mb-4">
+          <div class="col-0 col-lg-1 col-xl-2">
+
+          </div>
+
+          <div class="col-1">
+            <p class="text-light text-center">6969$</p>
+          </div>
+
+          <div class="col-11 col-sm-10 col-lg-8 col-xl-6">
+            <p class="text-light text-left">Total</p>
+          </div>
+
+          <div class="col-0 col-sm-1 col-lg-2 col-xl-3">
+
+          </div>
+
+        </div>
+
+        <!------------------------------------------------------------------->
+
+
+
+
+        <!--
+[Commissioner's Contact]: Discord/PayPal Email
+[Are we designing character from scratch?]: y/n
+-- If yes: 10-50% design fee
+[References]: Imgur album link pls
+[Style]: Clean Colors, Hybrid, Colored Sketch, Emote, Sketch, Doodle, Scribble, Logo (.PSD), Other
+-- > If Doodle/Scribble: Shading y/n (flat price +5$)
+[Body]: portrait, halfbody, thighs, full body
+[Expression & Pose]: image link preferred, but might be able to work from description
+[Outfit Complexity]: calculated manually
+[Solo, Duo, or Multiple Characters]: ?
+-- > If duo+, add character interaction 3-20%
+[Background]: y/n
+-- > If yes, add flat amount (manually) & background integration 5-15%
+[Private]: y/n
+-- If yes: +100%
+[Skip Queue/Rush/Deadline]: y/n
+-- > skip queue = +25% , not rushed
+-- > rush/deadline = +50-100%, depending on time limit | minimum 1 week required for hybrid/clean colors.
+-- > cannot skip queue AND rush. deadlines over 6w away need not apply unless current queue is over 3 people.
+[Lewd]: y/n
+-- > If yes: +15-25%
+[Did you read my TOS https://www.deviantart.com/xir4n/art/Commissions-Prices-ToS-FAQ-Info-OPEN-844947526 ]: y/n
+[Do you have any questions or concerns]:
+[Any other details I should know about]:
+-->
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-muted">
+    <div class="container">
+
+    </div>
+  </footer>
+  <div id="spinner-wrapper"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/start.js"></script>
+</body>
+
+</html>

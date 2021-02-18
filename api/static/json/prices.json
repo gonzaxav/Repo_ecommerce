@@ -1,0 +1,575 @@
+{
+    "designing": [
+        {
+            "no": [
+                {
+                    "value": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ],
+            "yes": [
+                {
+                    "minValue": "10",
+                    "maxValue": "50",
+                    "dollarOrPercentage": "%"
+                }
+            ]
+        }
+    ],
+    "body": [
+        {
+            "portrait": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "54",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "42",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "32",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "27",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ]
+                }
+            ],
+            "halfbody": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "72",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "58",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "39",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "35",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ]
+                }
+            ],
+            "thighs": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "95",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "72",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "48",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "40",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ]
+                }
+            ],
+            "full": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "110",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "88",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "55",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "48",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": true,
+                            "value": "17",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": true,
+                            "value": "15",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ]
+                }
+            ],
+            "other": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": true,
+                            "value": "25",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": false,
+                            "value": "0",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "$"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": true,
+                            "value": "1",
+                            "dollarOrPercentage": "$"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "outfit": [
+        {
+            "verySimple": [
+                {
+                    "value": "100",
+                    "dollarOrPercentage": "%"
+                }
+            ],
+            "simple": [
+                {
+                    "value": "110",
+                    "dollarOrPercentage": "%"
+                }
+            ],
+            "average": [
+                {
+                    "value": "125",
+                    "dollarOrPercentage": "%"
+                }
+            ],
+            "somewhatComplex": [
+                {
+                    "value": "145",
+                    "dollarOrPercentage": "%"
+                }
+            ],
+            "layeredClothing": [
+                {
+                    "value": "175",
+                    "dollarOrPercentage": "%"
+                }
+            ],
+            "veryComplex": [
+                {
+                    "value": "190",
+                    "dollarOrPercentage": "%"
+                }
+            ]
+        }
+    ],
+    "cheapshading": [
+        {
+            "doodle": [
+                {
+                    "yes": "5",
+                    "no": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ],
+            "scribble": [
+                {
+                    "yes": "5",
+                    "no": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ]
+        }
+    ],
+    "amountcharacters": [
+        {
+            "1": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": true,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ]
+                }
+            ],
+            "2": [
+                {
+                    "cleanColors": [
+                        {
+                            "isItPossible": true,
+                            "value": "120",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "hybrid": [
+                        {
+                            "isItPossible": true,
+                            "value": "115",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "coloredSketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "120",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "emote": [
+                        {
+                            "isItPossible": false,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "sketch": [
+                        {
+                            "isItPossible": true,
+                            "value": "110",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "doodle": [
+                        {
+                            "isItPossible": true,
+                            "value": "105",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "scribble": [
+                        {
+                            "isItPossible": true,
+                            "value": "105",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "logo": [
+                        {
+                            "isItPossible": false,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ],
+                    "other": [
+                        {
+                            "isItPossible": false,
+                            "value": "100",
+                            "dollarOrPercentage": "%"
+                        }
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "yes": "5",
+                    "no": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ],
+            "4": [
+                {
+                    "yes": "5",
+                    "no": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ],
+            "other": [
+                {
+                    "yes": "5",
+                    "no": "0",
+                    "dollarOrPercentage": "$"
+                }
+            ]
+        }
+    ]
+}
