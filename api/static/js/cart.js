@@ -60,6 +60,8 @@ function removeFromList(i) {
     ShowCartInfo(cart_info_array);
 }
 
+
+
 function ShowCartInfo(array) {
     let contenido = "";
 
@@ -72,7 +74,11 @@ function ShowCartInfo(array) {
         let sub = checkCurrency(product.unitCost, product.currency) * product.count;
 
         contenido +=
+<<<<<<< Updated upstream:api/static/js/cart.js
             `
+=======
+        `
+>>>>>>> Stashed changes:js/cart.js
         <tr>
             <th>${i + 1}</th>
 
@@ -194,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
                 btnPago.classList.remove("btn-danger");
                 btnPago.classList.add("btn-success");
                 document.getElementById("pagar").innerHTML =
-                    `
+                `
                 <div class="alert alert-success alert-dismissible alertFix show mt-3" role="alert">
                     <strong>Forma de pago ingresada</strong>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
